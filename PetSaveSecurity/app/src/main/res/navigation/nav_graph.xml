@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/animalsNearYou">
+
+    <fragment
+        android:id="@+id/animalsNearYou"
+        android:name="com.erbe.petsavesecurity.animalsnearyou.presentation.AnimalsNearYouFragment"
+        android:label="@string/animals_near_you_screen_label"
+        tools:layout="@layout/fragment_animals_near_you" />
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.erbe.petsavesecurity.search.presentation.SearchFragment"
+        android:label="@string/search_screen_label"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/report"
+        android:name="com.erbe.petsavesecurity.report.presentation.ReportDetailFragment"
+        android:label="@string/report_screen_label"
+        tools:layout="@layout/fragment_search" />
+
+</navigation>
